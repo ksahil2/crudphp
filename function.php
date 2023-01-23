@@ -10,7 +10,7 @@ class functions{
         
     }
 
-    //function for insert
+    
     public function insert($table=NULL , $column=NULL , $value=NULL){
        try{
             if(empty($table) || empty($column) || empty($value)){
@@ -67,7 +67,6 @@ class functions{
                 $updateArray[] = $key. ' ="'.$value.'"';    
             }
             $sql = 'UPDATE '.$table.' SET ' . implode(',', $updateArray) . " WHERE ".$this->setcondition($conditions).';';
-            // echo $sql;die;
             return $this->con->query($sql);
         }
         catch(Exception $e){
