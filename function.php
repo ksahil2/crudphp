@@ -10,6 +10,7 @@ class functions{
         
     }
 
+    //function for insert
     public function insert($table=NULL , $column=NULL , $value=NULL){
        try{
             if(empty($table) || empty($column) || empty($value)){
