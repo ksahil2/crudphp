@@ -92,6 +92,7 @@ class Validation {
 
     }
 
+    //type validation
     public function typeValidation($user,$id=null){
         $errors = [];
         $function = new functions();
